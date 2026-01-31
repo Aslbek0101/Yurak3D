@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Hand Particles</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="ui-layer">
+        <div id="loading">Initializing Magic...</div>
+        <div class="controls">
+            <div class="instruction">👋 Wave your hand to interact</div>
+            <div class="mode-indicator">Mode: <span id="current-mode">Nebula</span></div>
+            <div class="sub-instruction">(Tap 'SPACE' to switch effects)</div>
+        </div>
+    </div>
+
+    <!-- Hidden Video Element for MediaPipe -->
+    <video id="videoElement" playsinline></video>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+    <!-- Main Logic -->
+    <script src="main.js"></script>
+</body>
+
+</html>
